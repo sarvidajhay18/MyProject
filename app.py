@@ -23,8 +23,8 @@ local_css("style/style.css")
 # --- Load Assets ---
 lottie_coding = load_lottieurl("https://lottie.host/ccd351fa-6625-4172-9082-8133922133d6/V9YuUtgXl2.json")
 lottie_email = load_lottieurl("https://lottie.host/cf262121-a926-4935-b875-de2f0c5e1443/egpAV4JoPj.json")
-img_project1 = Image.open("images/nature.jpg")
-img_lottie_animation = Image.open("images/nature.jpg")
+img_project1 = Image.open("images/snake.jpg")
+img_lottie_animation = Image.open("images/programmer2.jpg")
 
 # --- Side Bar Section ---
 with st.sidebar:
@@ -57,10 +57,10 @@ if tabs =='Home':
         column_left, column_right = st.columns((2,1))
         with column_left:
             st.write("---")
-            st.title("This is My Webpage")
-            st.subheader("Hi :wave:, Jhay-r C. Sarvida")
+            st.title("Welcome to My Webpage")
+            st.subheader("hi :wave:, Jhay-r C. Sarvida")
             st.write("I am a Computer Engineering students from SNSU")
-            st.write("To know my projects visit my github link below.")
+            st.write("Visit my github link below to learn about my work.")
             st.write("[Github Link Here](https://github.com/sarvidajhay18/MyProject)")
         with column_right:
             pass
@@ -76,10 +76,10 @@ elif tabs == 'Project':
             # insert image
             st.image(img_project1)
         with text_column:
-            st.subheader("Basketball Score Counter App")
+            st.subheader("Snake Game App")
             st.write(
                 """ 
-                This is a Basketball Score Counter made in Html, Css and Java Script. 
+                This is a Snake Game App made in Python. 
                 """
                 """ 
                 This web app is not fully finish. 
@@ -111,3 +111,5 @@ elif tabs == 'About':
         with left_column:
             st.header("About Me")
             st.write("##")
+            st.write("I am a computer engineering student in Surigao del Norte State University.")
+            st.write("I am currently studying Python, Java, Html and css.")
