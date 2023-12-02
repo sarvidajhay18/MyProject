@@ -1,0 +1,4 @@
+pip install streamlit-lottie
+pip install streamlit-on-hover-tabs
+pip install requests
+pip install pillow
