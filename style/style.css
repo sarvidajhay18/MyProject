@@ -1,5 +1,5 @@
 h1,h2,h3,h4,h5,h6,p,li,ul{
-  color: #454ea0;
+  color: #1d2994;
   font-style: italic;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -21,14 +21,14 @@ p{
   height: 100%;
   width: 100%;
   overflow: overlay;
-  background-color: #2b1ee7;
+  background-color: #120369;
 }
 
 @media (min-width: 50vh){
 .st-emotion-cache-z5fcl4, .st-emotion-cache-qcqlej, .st-emotion-cache-10pw50{
     padding-left: 5rem;
     padding-right: 5rem;
-    background-color: #7fffd4;
+    background-color: rgb(127, 208, 255);
  }
 }
 /* CSS Snippet from W3schools: https://www.w3schools.com/howto/howto_css_contact_form.asp */
@@ -63,7 +63,7 @@ img {
 }
 
 title{
-  background-color: #04AA6D;
+  background-color: #02ca81;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -82,7 +82,7 @@ button[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 button[type=submit]:hover {
-  background-color: rgb(4, 71, 255);
+  background-color: rgb(4, 36, 122);
 }
 
 /* Hide Streamlit Branding */
