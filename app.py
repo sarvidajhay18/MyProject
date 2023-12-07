@@ -58,12 +58,12 @@ if tabs =='Home':
         with column_left:
             st.write("---")
             st.title("Welcome to My Webpage")
-            st.subheader("hi :wave:, Jhay-r C. Sarvida")
+            st.subheader("hi :wave:,I am Jhay-r C. Sarvida")
             st.write("I am a Computer Engineering students from SNSU")
             st.write("Visit my github link below to learn about my work.")
             st.write("[Github Link Here](https://github.com/sarvidajhay18/MyProject)")
         with column_right:
-            pass
+            st_lottie(lottie_coding, height=300, key="coding")
 
 # --- Projects Section ---
 elif tabs == 'Project':
@@ -113,3 +113,28 @@ elif tabs == 'About':
             st.write("##")
             st.write("I am a computer engineering student in Surigao del Norte State University.")
             st.write("I am currently studying Python, Java, Html and css.")
+
+# --- feedback Section ---
+elif tabs == 'Feedback':
+    with st.container():
+        st.write("---")
+        left_column, right_column = st.columns((2,1))
+        with left_column:
+            st.header("Get in Touch With Me!")
+            st.write("##")
+  # Documention: https://formsubmit.co/ !!! CHANGE EMAIL ADDRESS !!!
+    contact_form = """
+    <form action="https://formsubmit.co/jhaysarvida@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" placeholder="Your message here" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+    """
+    left_column, right_column = st.columns(2)
+    with left_column:
+        st.markdown(contact_form, unsafe_allow_html=True)
+    with right_column:
+        st.empty()
+
