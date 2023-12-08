@@ -21,7 +21,7 @@ def local_css(file_name):
 local_css("style/style.css")
 
 # --- Load Assets ---
-lottie_coding = load_lottieurl("https://lottie.host/ccd351fa-6625-4172-9082-8133922133d6/V9YuUtgXl2.json")
+lottie_coding = load_lottieurl("https://lottie.host/a796d5ff-a73b-41c8-acd6-0628114760e7/jRTduUF2dv.json")
 lottie_email = load_lottieurl("https://lottie.host/cf262121-a926-4935-b875-de2f0c5e1443/egpAV4JoPj.json")
 img_project1 = Image.open("images/snake.jpg")
 img_lottie_animation = Image.open("images/programmer2.jpg")
@@ -58,7 +58,7 @@ if tabs =='Home':
         with column_left:
             st.write("---")
             st.title("Welcome to My Webpage")
-            st.subheader("hi :wave:,I am Jhay-r C. Sarvida")
+            st.subheader("hi :wave:, I am Jhay-r C. Sarvida")
             st.write("I am a Computer Engineering students from SNSU")
             st.write("Visit my github link below to learn about my work.")
             st.write("[Github Link Here](https://github.com/sarvidajhay18/MyProject)")
@@ -137,4 +137,3 @@ elif tabs == 'Feedback':
         st.markdown(contact_form, unsafe_allow_html=True)
     with right_column:
         st.empty()
-
