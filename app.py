@@ -17,14 +17,32 @@ def load_lottieurl(url):
 def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+    from PIL import Image
+import requests
+import streamlit as st
+from streamlit_lottie import st_lottie
+from st_on_hover_tabs import on_hover_tabs
+
+st.set_page_config(page_title="My Webpage", page_icon=":tada:", layout="wide")
+
+def load_lottieurl(url):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+# use local Css
+
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
     
 local_css("style/style.css")
 
 # --- Load Assets ---
 lottie_coding = load_lottieurl("https://lottie.host/a796d5ff-a73b-41c8-acd6-0628114760e7/jRTduUF2dv.json")
-lottie_email = load_lottieurl("https://lottie.host/cf262121-a926-4935-b875-de2f0c5e1443/egpAV4JoPj.json")
-img_project1 = Image.open("images/snake.jpg")
-img_lottie_animation = Image.open("images/programmer2.jpg")
+img_project1 = Image.open("images/scouts.png")
+img_lottie_animation = Image.open("images/Rank.png")
 
 # --- Side Bar Section ---
 with st.sidebar:
@@ -57,7 +75,7 @@ if tabs =='Home':
         column_left, column_right = st.columns((2,1))
         with column_left:
             st.write("---")
-            st.title("Welcome to My Webpage")
+            st.title("Welcome to My Home Page")
             st.subheader("hi :wave:, I am Jhay-r C. Sarvida")
             st.write("I am a Computer Engineering students from SNSU")
             st.write("Visit my github link below to learn about my work.")
@@ -76,31 +94,50 @@ elif tabs == 'Project':
             # insert image
             st.image(img_project1)
         with text_column:
-            st.subheader("Snake Game App")
-            st.write(
-                """ 
-                This is a Snake Game App made in Python. 
-                """
-                """ 
-                This web app is not fully finish. 
-                """
-                """
-                This is a sample for fun web app only. 
-                """
-            )
-            st.markdown("[Github Link](https://github.com/sarvidajhay18/MyProject)")
+            st.subheader("Boy Scouts of the Philippines")
+            st.write("Age range")
+            st.write("KID Scout: 4-6.")
+            st.write("KAB Scout: 6-9.")
+            st.write("Boy Scout: 9-12.")
+            st.write("Senior Scout: 13-19.")
+            st.write("Rover Scout: 18-26.")
+            st.write("Headquarters	Natividad Lopez St., Ermita, Manila.")
+            st.write("Country	Philippines")
+            st.write("Founded	October 31, 1936; 87 years ago")
+            st.write("Founders")
+            st.write("Josephus Emile H. Stevenot")
+            st.write("Manuel R. Camus")
+            st.write("Vicente P. Lim")
+            st.write("Carlos P. Romulo")
+            st.write("Jorge B. Vargas")
+            st.write("Arsenio Luz")
+            st.write("Gabriel A. Daza")
+            st.write("Membership: 2,811,541 (2020)")
+            st.write("Chief Scout: President Bongbong Marcos")
+            st.write("National President: Dale B. Corvera")
+            st.write("Secretary General: Rogelio S. Villa")
+            st.write("##")
+            st.write("Affiliation")
+            st.write("World Organization of the Scout Movement")
+            st.write("Asia-Pacific Scout Region")
+            st.write("ASEAN Scouts Association for Regional Cooperation")
+            st.write("##")
+            st.markdown("[Scouts.org.ph.](http://scouts.org.ph/)")
     with st.container():
         image_column, text_column = st.columns((1,2)) # (image_column size, text_column size)
         with image_column:
             st.image(img_lottie_animation) # insert image
         with text_column:
-            st.subheader("How to add a contact form in your Streamit App")
-            st.write(
-                """
-                Want to add a contact form to your streamlit website.
-                In this video, I'm going to show you how to implement a contact form in your Streamlit app using the free service 'Form Submit'.
-                """
-            )
+            st.subheader("Advancement in Boy/Senior Scouting")
+            st.write("##")
+            st.write("Membership")
+            st.write("Explorer Scout")
+            st.write("Pathfinder Scout")
+            st.write("Trail to Eagle")
+            st.write("Outdoorsman Scout (Airman, Seaman)")
+            st.write("Venturer Scout (Air Venture, Sea Venture)")
+            st.write("Eagle Scout")
+            
             st.markdown("[Watch Here](https://youtu.be/FOULV9Xij_8)")
 
 # --- About Section ---
