@@ -109,15 +109,7 @@ elif tabs == 'Project':
             st.image(img_lottie_animation) # insert image
         with text_column:
             st.subheader("Advancement in Boy/Senior Scouting")
-            st.write("##")
-            st.write("Membership")
-            st.write("Explorer Scout")
-            st.write("Pathfinder Scout")
-            st.write("Trail to Eagle")
-            st.write("Outdoorsman Scout (Airman, Seaman)")
-            st.write("Venturer Scout (Air Venture, Sea Venture)")
-            st.write("Eagle Scout")
-            
+        
             st.markdown("[Watch Here](https://youtu.be/FOULV9Xij_8)")
 
 # --- About Section ---
