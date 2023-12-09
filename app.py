@@ -57,7 +57,7 @@ if tabs =='Home':
         with column_left:
             st.write("---")
             st.title("Welcome To My Home Page")
-            st.subheader("hi :wave:, I am Jhay-r C. Sarvida")
+            st.subheader("hi, I am Jhay-r C. Sarvida :wave:")
             st.write("I am a Computer Engineering students from SNSU")
             st.write("Visit my github link below to learn about my work.")
             st.write("[Github Link Here](https://github.com/sarvidajhay18/MyProject)")
