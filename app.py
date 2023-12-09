@@ -22,8 +22,8 @@ local_css("style/style.css")
 
 # --- Load Assets ---
 lottie_coding = load_lottieurl("https://lottie.host/a796d5ff-a73b-41c8-acd6-0628114760e7/jRTduUF2dv.json")
-img_project1 = Image.open("images/Rank.jpg")
-img_lottie_animation = Image.open("images/Rank.jpg")
+img_project1 = Image.open("images/Scouts.png")
+img_lottie_animation = Image.open("images/Rank.png")
 
 # --- Side Bar Section ---
 with st.sidebar:
