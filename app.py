@@ -22,12 +22,12 @@ local_css("style/style.css")
 
 # --- Load Assets ---
 lottie_coding = load_lottieurl("https://lottie.host/a796d5ff-a73b-41c8-acd6-0628114760e7/jRTduUF2dv.json")
-img_project1 = Image.open("images/snake.jpg")
-img_lottie_animation = Image.open("images/programmer2.jpg")
+img_project1 = Image.open("images/Scouts.jpg")
+img_lottie_animation = Image.open("images/Rank.jpg")
 
 # --- Side Bar Section ---
 with st.sidebar:
-        tabs = on_hover_tabs(tabName=['Home', 'Project' ,'About', 'Feedback'], 
+        tabs = on_hover_tabs(tabName=['Home', 'Project' ,'About', 'Contact'], 
                              iconName=['home', 'link', 'info', 'mail'],
                              styles = {'navtab': {'background-color':'#1e7aea',
                                                   'color': '#fcfcfc',
@@ -114,7 +114,7 @@ elif tabs == 'About':
             st.write("I am currently studying Python, Java, Html and css.")
 
 # --- feedback Section ---
-elif tabs == 'Feedback':
+elif tabs == 'Contact':
     with st.container():
         st.write("---")
         left_column, right_column = st.columns((2,1))
